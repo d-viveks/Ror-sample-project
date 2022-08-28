@@ -18,7 +18,7 @@
 
     <div class="mb-2">
       <%= form.label :task_status, { class: "form-label"}%><br>
-      <%= form.select(:status, options_for_select([['Pending','pending'], ['In Progress','in_progress'],['Assigned','assigned']]),{}, {class: "form-control"}) %>
+      <%= form.select(:status, options_for_select([['Pending','pending'], ['In Progress','in_progress'],['Assigned','assigned']], selected: @task.status),{}, {class: "form-control"}) %>
     </div>
 
     <div class="mb-2 ">
